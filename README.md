@@ -1,5 +1,5 @@
 # flutter_examples
-This is a andriod app which is developed in Flutter language with examples.
+This is a android app which is developed in Flutter language with examples.
 
 ## Getting Started
 
