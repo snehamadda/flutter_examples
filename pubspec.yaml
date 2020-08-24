@@ -23,6 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^0.12.2
+  sqflite: ^1.2.0
+  path: ^1.5.1
   english_words: ^3.1.5
   cupertino_icons: ^0.1.3
 

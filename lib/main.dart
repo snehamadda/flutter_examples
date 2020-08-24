@@ -4,6 +4,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:my_flutter_app/BottomNavigation.dart';
+import 'package:my_flutter_app/DrawerExample.dart';
+import 'package:my_flutter_app/LoginScreen.dart';
 
 import 'HomeScreen.dart';
 
@@ -19,7 +21,9 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.deepPurple,
       ),
       routes: {
+        '/LoginScreen' : (context) => LoginScreen(),
         '/BottomNavigation' : (context) => BottomNavigation(),
+        '/DrawerScreen' : (context) => DrawerExample(),
       },
       home: HomeScreen(),
     );

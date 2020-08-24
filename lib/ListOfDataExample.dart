@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'DataList.dart';
+import 'models/DataList.dart';
 
 class ListOfData extends StatefulWidget {
   @override

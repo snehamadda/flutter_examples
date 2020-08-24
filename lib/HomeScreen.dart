@@ -9,6 +9,8 @@ import 'package:my_flutter_app/RowLayout.dart';
 import 'package:my_flutter_app/SplashScreen.dart';
 import 'package:my_flutter_app/StatefulWidgetExample.dart';
 
+import 'ExampleWithSqlite.dart';
+import 'FormValidationExample.dart';
 import 'locationWorldTime/Home.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -24,7 +26,7 @@ class HomeScreen extends StatelessWidget {
 
   Widget getListOfExamples(BuildContext context) {
     var listView = ListView(
-      padding: const EdgeInsets.all(8),
+      padding: const EdgeInsets.all(20),
       children: <Widget>[
         RaisedButton(
           child: Text('Row Example'),
@@ -90,81 +92,25 @@ class HomeScreen extends StatelessWidget {
           },
         ),
         RaisedButton(
-          child: Text('Splash Screen'),
+          child: Text('App Example'),
           color: Colors.blue,
           onPressed: () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => SplashScreen()));
           },
-        ),RaisedButton(
-          child: Text('Splash Screen'),
-          color: Colors.blue,
+        ),
+        RaisedButton(
+          child: Text('SQLite Example'),
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SplashScreen()));
+                MaterialPageRoute(builder: (context) => SqLiteExample()));
           },
-        ),RaisedButton(
-          child: Text('Splash Screen'),
-          color: Colors.blue,
+        ),
+        RaisedButton(
+          child: Text('Forms Example'),
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SplashScreen()));
-          },
-        ),RaisedButton(
-          child: Text('Splash Screen'),
-          color: Colors.blue,
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SplashScreen()));
-          },
-        ),RaisedButton(
-          child: Text('Splash Screen'),
-          color: Colors.blue,
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SplashScreen()));
-          },
-        ),RaisedButton(
-          child: Text('Splash Screen'),
-          color: Colors.blue,
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SplashScreen()));
-          },
-        ),RaisedButton(
-          child: Text('Splash Screen'),
-          color: Colors.blue,
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SplashScreen()));
-          },
-        ),RaisedButton(
-          child: Text('Splash Screen'),
-          color: Colors.blue,
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SplashScreen()));
-          },
-        ),RaisedButton(
-          child: Text('Splash Screen'),
-          color: Colors.blue,
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SplashScreen()));
-          },
-        ),RaisedButton(
-          child: Text('Splash Screen'),
-          color: Colors.blue,
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SplashScreen()));
-          },
-        ),RaisedButton(
-          child: Text('Splash Screen'),
-          color: Colors.blue,
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SplashScreen()));
+                MaterialPageRoute(builder: (context) => FormsExample()));
           },
         ),
       ],
