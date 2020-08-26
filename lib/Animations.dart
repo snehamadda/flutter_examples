@@ -46,8 +46,9 @@ class AnimationTwo extends StatelessWidget {
         title: Text('AnimationTwo'),
       ),
       body: Center(
-          child: FlatButton(
-        child: Text('Welcome, Do you want to look over list of items'),
+          child: RaisedButton(
+            padding: EdgeInsets.all(20),
+        child: Text('Welcome, Do you want to display image from internet'),
         onPressed: () {
           Navigator.push(
               context,

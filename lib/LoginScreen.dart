@@ -2,16 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_flutter_app/Animations.dart';
 
-import 'BottomNavigation.dart';
+import 'SignupScreen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
 
-class _LoginScreenState extends State <LoginScreen> {
+class _LoginScreenState extends State<LoginScreen> {
   TextEditingController name = TextEditingController();
   TextEditingController password = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,6 +80,8 @@ class _LoginScreenState extends State <LoginScreen> {
                     ),
                     onPressed: () {
                       //sign up Screen
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => SignUpScreen()));
                     },
                   )
                 ],

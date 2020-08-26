@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_app/ColumnLayout.dart';
 import 'package:my_flutter_app/ExpandedWidgets.dart';
+import 'package:my_flutter_app/GestureAlertDialogExample.dart';
 import 'package:my_flutter_app/IdCardExample.dart';
 import 'package:my_flutter_app/ListOfDataExample.dart';
 import 'package:my_flutter_app/MarginToText.dart';
@@ -9,8 +10,14 @@ import 'package:my_flutter_app/RowLayout.dart';
 import 'package:my_flutter_app/SplashScreen.dart';
 import 'package:my_flutter_app/StatefulWidgetExample.dart';
 
+import 'BottomNavigation.dart';
+import 'ButtonTest.dart';
 import 'ExampleWithSqlite.dart';
 import 'FormValidationExample.dart';
+import 'ListViewWithJson.dart';
+import 'TabBarExample.dart';
+import 'ToastExample.dart';
+import 'WhatsApp.dart';
 import 'locationWorldTime/Home.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -92,11 +99,61 @@ class HomeScreen extends StatelessWidget {
           },
         ),
         RaisedButton(
+          child: Text('Button Example'),
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ButtonExample()));
+          },
+        ),
+        RaisedButton(
+          child: Text('Toast Example'),
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ToastExample()));
+          },
+        ),
+        RaisedButton(
+          child: Text('TabBar Example'),
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => TabBarExample()));
+          },
+        ),
+        RaisedButton(
+          child: Text('ListViewWithJson Example'),
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ListViewWithJson()));
+          },
+        ),
+        RaisedButton(
+          child: Text('Gesture Example'),
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => GestureExample()));
+          },
+        ),
+        RaisedButton(
+          child: Text('BottomNavigation Example'),
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => BottomNavigation()));
+          },
+        ),
+        RaisedButton(
           child: Text('App Example'),
           color: Colors.blue,
           onPressed: () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => SplashScreen()));
+          },
+        ),
+        RaisedButton(
+          child: Text('WhatsApp Example'),
+          color: Colors.blue,
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => WhatsApp()));
           },
         ),
         RaisedButton(

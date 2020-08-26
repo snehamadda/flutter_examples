@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class ButtonTest extends StatelessWidget {
+class ButtonExample extends StatelessWidget {
   @override
   // ignore: missing_return
   Widget build(BuildContext context) {

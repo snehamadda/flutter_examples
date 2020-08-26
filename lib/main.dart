@@ -15,16 +15,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Samples',
+      //title: 'Flutter Samples',
       theme: ThemeData(
         // Add the 3 lines from here...
-        primaryColor: Colors.deepPurple,
+        primaryColor: Colors.teal,
+        accentColor: Colors.teal,
       ),
       routes: {
         '/LoginScreen' : (context) => LoginScreen(),
         '/BottomNavigation' : (context) => BottomNavigation(),
         '/DrawerScreen' : (context) => DrawerExample(),
       },
+      debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );
   }

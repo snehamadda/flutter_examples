@@ -11,7 +11,21 @@ class DisplayImagesFromInternet extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Image.network('https://picsum.photos/250?image=9'),
+      body: Center(
+        child: Column(
+          children: [
+            Image.network(
+              'https://static.javatpoint.com/tutorial/flutter/images/flutter-creating-android-platform-specific-code3.png',
+              height: 400,
+              width: 250,
+            ),
+            Text(
+              'Displaying image from Internet',
+              style: TextStyle(fontSize: 20),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
