@@ -44,8 +44,8 @@ class _WhatsAppState extends State<WhatsApp>
       body: TabBarView(
         controller: _tabController,
         children: <Widget>[
-          new CameraScreen(),
-          new ChatScreen(),
+           CameraScreen(),
+           ChatScreen(),
           new CallScreen(),
           new StatusScreen(),
 

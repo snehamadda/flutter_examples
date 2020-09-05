@@ -12,6 +12,7 @@ import 'package:my_flutter_app/StatefulWidgetExample.dart';
 
 import 'BottomNavigation.dart';
 import 'ButtonTest.dart';
+import 'CardExample.dart';
 import 'ExampleWithSqlite.dart';
 import 'FormValidationExample.dart';
 import 'ListViewWithJson.dart';
@@ -134,10 +135,10 @@ class HomeScreen extends StatelessWidget {
           },
         ),
         RaisedButton(
-          child: Text('BottomNavigation Example'),
+          child: Text('Card Example'),
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => BottomNavigation()));
+                MaterialPageRoute(builder: (context) => CardExample()));
           },
         ),
         RaisedButton(

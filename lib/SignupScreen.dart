@@ -51,7 +51,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 color: Colors.lightBlue,
                 child: Text(
                   'Sign up',
-                  style: TextStyle(fontSize: 20,),
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
                 ),
                 onPressed: () {},
               ),
